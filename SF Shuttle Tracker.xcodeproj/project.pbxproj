@@ -13,6 +13,7 @@
 		408DD5601C4F58A9004F63CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408DD55F1C4F58A9004F63CE /* Assets.xcassets */; };
 		408DD5631C4F58A9004F63CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408DD5611C4F58A9004F63CE /* LaunchScreen.storyboard */; };
 		408DD56E1C4F58A9004F63CE /* SF_Shuttle_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DD56D1C4F58A9004F63CE /* SF_Shuttle_TrackerTests.swift */; };
+		408DD5791C4F5D65004F63CE /* ShuttleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DD5781C4F5D65004F63CE /* ShuttleRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		408DD5691C4F58A9004F63CE /* SF Shuttle TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SF Shuttle TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		408DD56D1C4F58A9004F63CE /* SF_Shuttle_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SF_Shuttle_TrackerTests.swift; sourceTree = "<group>"; };
 		408DD56F1C4F58A9004F63CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408DD5781C4F5D65004F63CE /* ShuttleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShuttleRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				408DD5581C4F58A9004F63CE /* AppDelegate.swift */,
 				408DD55A1C4F58A9004F63CE /* ViewController.swift */,
 				408DD55C1C4F58A9004F63CE /* Main.storyboard */,
+				408DD5781C4F5D65004F63CE /* ShuttleRouter.swift */,
 				408DD55F1C4F58A9004F63CE /* Assets.xcassets */,
 				408DD5611C4F58A9004F63CE /* LaunchScreen.storyboard */,
 				408DD5641C4F58A9004F63CE /* Info.plist */,
@@ -146,6 +149,7 @@
 				TargetAttributes = {
 					408DD5541C4F58A9004F63CE = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CT28RVZN2N;
 					};
 					408DD5681C4F58A9004F63CE = {
 						CreatedOnToolsVersion = 7.2;
@@ -198,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				408DD55B1C4F58A9004F63CE /* ViewController.swift in Sources */,
+				408DD5791C4F5D65004F63CE /* ShuttleRouter.swift in Sources */,
 				408DD5591C4F58A9004F63CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,10 +330,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SF Shuttle Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bjoli.SF-Shuttle-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -336,10 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SF Shuttle Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bjoli.SF-Shuttle-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -386,6 +399,7 @@
 				408DD5741C4F58A9004F63CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		408DD5751C4F58A9004F63CE /* Build configuration list for PBXNativeTarget "SF Shuttle TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +408,7 @@
 				408DD5771C4F58A9004F63CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
